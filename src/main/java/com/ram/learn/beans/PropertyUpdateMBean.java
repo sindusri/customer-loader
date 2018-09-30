@@ -1,4 +1,4 @@
-package com.example.demo.beans;
+package com.ram.learn.beans;
 
 import javax.annotation.ManagedBean;
 

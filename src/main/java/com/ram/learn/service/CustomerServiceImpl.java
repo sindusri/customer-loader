@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.ram.learn.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.demo.model.Customer;
+import com.ram.learn.model.Customer;
 
 @Service
 @Transactional

@@ -1,8 +1,6 @@
-package com.example.demo.model;
+package com.ram.learn.model;
 
-import java.util.UUID;
-
-import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.AllArgsConstructor;
@@ -19,12 +17,8 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @JsonSerialize
-@JsonRootName(value = "customer")
-public class Customer{
-	
-	private UUID id;
-	private String firstName;
-	private String lastName;
-	private Contact contact;
-	 
+@JsonDeserialize
+public class Email {
+private String emailAddress;
+private ContactType type;
 }

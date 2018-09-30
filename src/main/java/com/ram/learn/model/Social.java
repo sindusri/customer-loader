@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.ram.learn.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -18,9 +18,7 @@ import lombok.ToString;
 @ToString
 @JsonSerialize
 @JsonDeserialize
-public class Phone {
-	private String number;
-	private String countryCode;
+public class Social {
+	private String handle;
 	private ContactType type;
-
 }

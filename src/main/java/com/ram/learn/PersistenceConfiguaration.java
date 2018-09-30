@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.ram.learn;
 
 import org.springframework.context.annotation.PropertySource;
 

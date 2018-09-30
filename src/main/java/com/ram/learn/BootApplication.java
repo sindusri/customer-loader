@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.ram.learn;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.Customer;
+import com.ram.learn.model.Customer;
 
 @SpringBootApplication
 public class BootApplication {

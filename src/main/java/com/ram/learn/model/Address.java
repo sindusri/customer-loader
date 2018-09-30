@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.ram.learn.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -18,10 +18,14 @@ import lombok.ToString;
 @ToString
 @JsonSerialize
 @JsonDeserialize
-public class Contact {
-	private Address address;
-	private Email email;
-	private Phone phone;
-	private Social social;
+public class Address {
+	
+	private String addressLine1;
+	private String addressLine2;
+	private String city;
+	private String stateProvice;
+	private String postalCode;
+	private String country;
+	private ContactType type;
 
 }

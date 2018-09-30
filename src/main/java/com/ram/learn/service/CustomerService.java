@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package com.ram.learn.service;
 
 import java.util.Collection;
 import java.util.UUID;
 
-import com.example.demo.model.Customer;
+import com.ram.learn.model.Customer;
 
 public interface CustomerService {
 
