@@ -11,13 +11,20 @@
  */
 package com.ram.learn;
 
+import javax.sql.DataSource;
+
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 
 @EnableAutoConfiguration
 @ComponentScan("com.ram.learn")
-@Import(PersistenceConfiguaration.class)
 public class ApplicationConfiguration {
+
+	@Bean
+	public DataSource dataSource() {
+		return DataSourceBuilder.create().build();
+	}
 
 }

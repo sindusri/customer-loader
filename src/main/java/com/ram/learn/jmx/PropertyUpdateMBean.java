@@ -1,4 +1,4 @@
-package com.ram.learn.beans;
+package com.ram.learn.jmx;
 
 import javax.annotation.ManagedBean;
 

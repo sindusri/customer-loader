@@ -1,6 +1,11 @@
 package com.ram.learn.model;
 
+import java.util.Date;
 import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -20,11 +25,17 @@ import lombok.ToString;
 @ToString
 @JsonSerialize
 @JsonRootName(value = "customer")
+@Entity
 public class Customer{
 	
+	@Id
+	@Column(name="ID")
 	private UUID id;
+	@Column(name = "FIRST_NAME")
 	private String firstName;
+	@Column(name = "LAST_NAME")
 	private String lastName;
-	private Contact contact;
+	@Column(name = "BIRTH_DATE")
+	private Date birthDate;
 	 
 }
