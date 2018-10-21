@@ -1,0 +1,19 @@
+/*
+ * GENDER.java
+ *
+ * Copyright (c) 2018 Southwest Airlines, Co.
+ * 2702 Love Field Drive, Dallas, TX 75235, U.S.A.
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Southwest Airlines, Co.
+ *
+ */
+package com.ram.learn.model;
+
+public enum GENDER {
+	MALE, FEMALE, UNKNOWN;
+	public GENDER getGender(String value) {
+		return GENDER.valueOf(value);
+	}
+}

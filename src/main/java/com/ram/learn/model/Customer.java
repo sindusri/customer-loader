@@ -37,5 +37,7 @@ public class Customer{
 	private String lastName;
 	@Column(name = "BIRTH_DATE")
 	private Date birthDate;
+	@Column(name ="gender")
+	private GENDER gender;
 	 
 }
