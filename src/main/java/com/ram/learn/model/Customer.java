@@ -27,7 +27,6 @@ import lombok.ToString;
 @JsonRootName(value = "customer")
 @Entity
 public class Customer{
-	
 	@Id
 	@Column(name="ID")
 	private UUID id;
@@ -39,5 +38,4 @@ public class Customer{
 	private Date birthDate;
 	@Column(name ="GENDER")
 	private GENDER gender;
-	 
 }
