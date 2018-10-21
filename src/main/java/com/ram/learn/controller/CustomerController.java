@@ -58,18 +58,6 @@ public class CustomerController {
 
 	}
 
-	/*
-	 * @DELETE
-	 *
-	 * @RequestMapping("/customer/{id}")
-	 *
-	 * @Produces(MediaType.APPLICATION_JSON) public Customer
-	 * deleteCustomer(@PathParam("id") UUID uuid) {
-	 *
-	 * return customerService.getCustomer(uuid);
-	 *
-	 * }
-	 */
 	@RequestMapping(path = "/customer", consumes = { "application/json" }, produces = {
 			"application/json" }, method = RequestMethod.PUT)
 	public UUID updateCustomer(Customer customer) {

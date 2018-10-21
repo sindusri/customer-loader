@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ram.learn.model.Customer;
+import com.ram.learn.model.GENDER;
 import com.ram.learn.repository.CustomerRepository;
 
 @Service
@@ -39,6 +40,9 @@ public class CustomerServiceImpl implements CustomerService {
 	public UUID createCustomer(Customer customer) {
 		UUID uuid = UUID.randomUUID();
 		customer.setId(uuid);
+		if (null == customer.getGender()) {
+			customer.setGender(GENDER.UNKNOWN);
+		}
 		customerRepository.save(customer);
 		return uuid;
 	}
