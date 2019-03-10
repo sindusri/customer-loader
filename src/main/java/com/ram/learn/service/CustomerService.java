@@ -26,6 +26,6 @@ public interface CustomerService {
 
 	public UUID deleteCustomer(UUID uuid);
 
-	public UUID updateCustomer(Customer customer);
+	public UUID updateCustomer(UUID uuid,Customer customer);
 
 }

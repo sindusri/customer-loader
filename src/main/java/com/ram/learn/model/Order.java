@@ -1,6 +1,7 @@
 package com.ram.learn.model;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -27,7 +28,7 @@ import lombok.ToString;
 @ToString
 @JsonSerialize
 @JsonRootName(value = "order")
-@Entity(name="ORDER")
+@Entity(name="ORDERS")
 public class Order {
 
 @Id
@@ -36,7 +37,7 @@ private UUID id;
 @Column(name="CUSTOMER_ID")
 private UUID customerId;
 @Column(name="ORDDER_DATE_TIME")
-private LocalDateTime orderDateTimeUTC;
+private Date orderDateTimeUTC;
 @Column(name="ORDER_STATUS")
 @Enumerated(EnumType.STRING)
 private ORDER_STATUS orderStatus;

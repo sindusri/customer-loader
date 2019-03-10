@@ -48,8 +48,8 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	@Override
-	public UUID updateCustomer(Customer customer) {
-		Optional<Customer> existingCustomer = customerRepository.findById(customer.getId());
+	public UUID updateCustomer(UUID customerId,Customer customer) {
+		Optional<Customer> existingCustomer = customerRepository.findById(customerId);
 		if (null != existingCustomer.get()) {
 			existingCustomer.get().setFirstName(customer.getFirstName());
 			existingCustomer.get().setLastName(customer.getLastName());

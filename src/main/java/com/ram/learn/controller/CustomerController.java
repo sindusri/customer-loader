@@ -58,13 +58,14 @@ public class CustomerController {
 
 	}
 
-	@RequestMapping(path = "/customer", consumes = { "application/json" }, produces = {
+	@RequestMapping(path = "/customer/{id}", consumes = { "application/json" }, produces = {
 			"application/json" }, method = RequestMethod.PUT)
-	public UUID updateCustomer(Customer customer) {
-		return customerService.updateCustomer(customer);
+	public UUID updateCustomer(@PathVariable("id") String id, @RequestBody Customer customer) {
+		UUID customerId = UUID.fromString(id);
+		return customerService.updateCustomer(customerId,customer);
 	}
 
-	@RequestMapping(path = "/customer/{id}", consumes = { "application/json" }, produces = {
+	@RequestMapping(path = "/customer/{id}", produces = {
 			"application/json" }, method = RequestMethod.DELETE)
 	public UUID deleteCustomer(@PathVariable("id") String id) {
 		UUID customerId = UUID.fromString(id);
